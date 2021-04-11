@@ -2,10 +2,13 @@ package de.rico.tutorial.main;
 
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
+//hier wird benötigtes importiert
+// fremde Bibliotheken
+
 import de.rico.tutorial.commands.HealCommand;
 import de.rico.tutorial.commands.StartKit;
 import de.rico.tutorial.commands.morgens;
-// hier wird benötigtes importiert
+// eigene Klassen importiert wegen Zugriff auf die Klassen
 
 
 public class Main extends JavaPlugin{
@@ -29,6 +32,10 @@ public class Main extends JavaPlugin{
 	}
 	
 	public void loadCommands( String commandname, CommandExecutor commandexecutor) {
+	// Kopf der Funktion mit ( Parameter blabla )
+	// Zeichenkette (String) commandname <- ist nur ein Name kann auch Buba oder TV heißen
+	// Object von Klasse CommandExecutor mit name commandexecutor <- kanna auch heißen wie es will
+	// generell sollten namen aber auch das Objekt hindeuten wenn möglich
 		
 		getCommand(commandname).setExecutor(commandexecutor);
 		
