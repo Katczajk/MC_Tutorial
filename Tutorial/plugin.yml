@@ -1,0 +1,15 @@
+name: Tutorial
+version: 1.0
+api-version: 1.16
+main: de.rico.tutorial.main.Main
+author: it-pilz
+prefix: [Tutorial]
+usage: "Usage: /heal"
+
+commands:
+  heal:
+   description: Dieses Kommando heilt dich!
+  startkit:
+   description: Hol dir dein StartKit
+  morgens:
+   description: stellt die Zeit auf frueh
